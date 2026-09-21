@@ -1,0 +1,6 @@
+CREATE USER civiclens_user WITH PASSWORD 'civiclens_user_password';
+ALTER USER civiclens_user WITH SUPERUSER;
+CREATE DATABASE civiclens_db OWNER civiclens_user;
+GRANT ALL PRIVILEGES ON DATABASE civiclens_db TO civiclens_user;
+psql -U civiclens_user -d civiclens_db -f civiclens.sql
+psql -U civiclens_user -d civiclens_db -h localhost

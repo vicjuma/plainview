@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+@import 'ngx-toastr/toastr';
+
+.toast-success {
+  background-color: #006600 !important;
+}
+
+.toast-error {
+  background-color: #BB1E10 !important;
+}
+
+.toast-warning {
+  background-color: #d97706 !important;
+}
+
+.toast-info {
+  background-color: #18A2D9 !important;
+}
+
+.payment-toast {
+  width: min(420px, calc(100vw - 32px)) !important;
+  max-width: 420px !important;
+  margin-top: 16px !important;
+  line-height: 1.5 !important;
+
+  font-family: Playfair, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+:root {
+  --kenya-black: #000000;
+  --kenya-red: #BB1E10;
+  --kenya-green: #006600;
+  --kenya-white: #FFFFFF;
+}
